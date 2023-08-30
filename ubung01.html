@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main *{
+            border-radius: 10px;
+        }
+        body{
+            background-color: lightblue;
+        }
+        main{
+            display: grid;
+            grid-template-columns: 30% 30% 30%;
+        }
+        .d1, .d2, .d3, .d4, .d5{
+            border: dotted 3px darkblue;
+            margin: 20px;
+            box-shadow: 0px 0px 5px blue;
+        }
+        /******Bilder aus der ersten Spalte*****/
+       main .d1 img{
+            width:200px;
+            height: 200px;
+            margin: 15px;
+            border-radius: 10px;
+        }
+        main .d1 p{
+            width: 400px;
+            font-family: Comic Sans MS;
+        }
+        /******Bilder aus der vierten Spalte****/
+        main .d4 img{
+            width: 150px;
+            height: 250px;
+            margin: 20px;
+            box-shadow: 0px 0px 5px darkblue;
+            padding: 5px;
+        }
+        main .d1{
+            display: grid;
+            grid-template-columns: 40% 40%;
+            background-color: lightgreen;
+        }
+        main .d2{
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 30px;
+            padding: 20px;
+            background-color: cornflowerblue;
+        }
+        main table th{
+            padding: 15px;
+            text-decoration-line: underline;
+            border: solid darkblue 1px;
+        }
+        main table td{
+            padding: 20px;
+            border: solid darkblue 1px;
+        }
+       
+        main .d3{
+            display: grid;
+            grid-template-columns: 26% 23% 26% auto;
+            background-color: coral;
+            font-size: 20px;
+            padding: 5px;
+            margin-top: auto;
+            margin-bottom: auto;
+           
+        }
+        main .d4{
+            display: grid;
+            grid-template-columns: 30% 30% 30%;
+            background-color: yellowgreen;
+        }
+        main .d4 .bild100{
+            grid-column-end: span 3;
+        }
+        main .d5{
+            display: grid;
+            grid-template-columns: 50% 50%;
+            font-size: 30px;
+            color: white;
+            text-shadow: 0px 0px 5px darkblue;
+            background-color: blueviolet;
+        }
+        .d5red, .d5green, .d5blue, .d5yellow{
+            border: double 3px aquamarine;
+            margin: 10px;
+            border-radius: 50%;
+            height: 350px;
+            ;
+        }
+        .d5red{
+            background-color: red;
+            grid-column-start: 2;
+        }
+        .d5green{
+            background-color: green;
+        }
+        .d5blue{
+            background-color: blue;
+        }
+        .d5yellow{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="d1">
+            <img src="https://image.geo.de/30141552/t/EM/v3/w1440/r1/-/mandrill-f-210581827-jpg--80566-.jpg">
+            <p>Der Mandrill, wissenschaftlich Mandrillus sphinx, ist Dank seines leuchtend bunten Gesichts einer der auffälligsten Affen im Tierreich. Wir stellen euch den Mandrill im Tierlexikon vor</p>
+            <img src="https://mh-1-bildagentur.panthermedia.net/media/previews/0008000000/08886000/~ara-papagei_08886400_preview.jpg">
+            <p>Die (Eigentlichen) Aras (Ara) bilden eine Gattung innerhalb der Familie der Eigentlichen Papageien (Psittacidae). Sie sind alle in Süd- und Mittelamerika beheimatet. Der Umfang der Gattung wird seit langem kontrovers diskutiert. Nach heutiger Auffassung gehören zu dieser Gattung noch acht Arten.</p>
+            <img src="https://images.bstatic.de/RBP-hDZfklVB-A-7p92K9Wa4MSo=/956x540/filters:focal(967x719:987x739)/images/4be6bef6/4a88/4c49/9feb/3f0fabdd43d2_1662627561938.jpg">
+            <p>Der Tiger (Panthera tigris) ist eine in Asien verbreitete Großkatze. Er ist aufgrund seiner Größe und des charakteristischen dunklen Streifenmusters auf goldgelbem bis rotbraunem Grund unverwechselbar. Es gibt acht bis neun Unterarten, die als Festlands- und Inselunterarten unterschieden werden und im Erscheinungsbild voneinander abweichen. Die größten Unterschiede bestehen zwischen den kleinen, kontrastreich gefärbten Sumatra-Tigern und den großen, blasser gefärbten Sibirischen Tigern, auch als Amurtiger bezeichnet.</p>
+        </div>
+        <div class="d2">
+            <table>
+                <tr>
+                    <th>Buchstabe:</th>
+                    <th>Zahl:</th>
+                </tr>
+                <tr>
+                    <td>A</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>B</td>
+                    <td>2</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>Land:</th>
+                    <th>Stadt:</th>
+                </tr>
+                <tr>
+                    <td>Deutschland</td>
+                    <td>Berlin</td>
+                </tr>
+                <tr>
+                    <td>Frankreich</td>
+                    <td>Paris</td>
+                </tr>
+            </table>
+        </div>
+        <div class="d3">
+           <h3>Name:<input type="text" name="Name"></h3>
+            <h3>Geburtstag:<input type="date" name="Geburtstag"></h3>
+            <h3>Passwort:<input type="password" name="Passwort"></h3>
+            <h3>Ihr Anliegen:<textarea>Bitte geben sie ihr Anliegen ein</textarea></h3>
+        </div>
+        <div class="d4">
+            <img src="https://upload.wikimedia.org/wikipedia/en/d/d4/Mickey_Mouse.png">
+            <img src="https://upload.wikimedia.org/wikipedia/en/b/b2/Pluto_%28Disney%29_transparent.png">        
+            <img class="bild100" src="https://www.lustiges-taschenbuch.de/sites/default/files/donald-duck_0.png">
+            <img src="https://www.lustiges-taschenbuch.de/sites/default/files/2016-10/daisy-duck-schaut-verliebt.png">
+            <img src="https://www.lustiges-taschenbuch.de/sites/default/files/dagobert-duck_0.png">
+            <img class="bild100" src="https://www.lustiges-taschenbuch.de/sites/default/files/gundel-gaukeley_0.png">
+            <img src="https://www.lustiges-taschenbuch.de/sites/default/files/daniel-duesentrieb_0.png">
+            <img src="https://www.duckipedia.de/images/thumb/5/57/Quacks.png/300px-Quacks.png">
+        </div>
+        <div class="d5">
+            <div class="d5red"></div>
+            <div class="d5green"></div>
+            <div class="d5blue"></div>
+            <div class="d5yellow"></div>
+        </div>
+    </main>
+</body>
+</html>
